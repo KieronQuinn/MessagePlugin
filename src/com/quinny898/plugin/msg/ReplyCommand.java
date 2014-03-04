@@ -22,7 +22,7 @@ public class ReplyCommand implements CommandExecutor {
 		Player player = server.getPlayer(args[0]);
 
 		String message = " ";
-		for (String arg : Arrays.copyOfRange(args, 2, args.length))
+		for (String arg : Arrays.copyOfRange(args, 1, args.length))
 			message += " " + arg;
 
 		if (player != null) {

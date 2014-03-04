@@ -24,7 +24,7 @@ public class MsgCommand implements CommandExecutor {
 			sender.sendMessage("Usage: /msg <name> <message>");
 		} else {
 			String message = "";
-			for (String arg : Arrays.copyOfRange(args, 2, args.length))
+			for (String arg : Arrays.copyOfRange(args, 1, args.length))
 				message += " " + arg;
 
 			if (player != null) {
