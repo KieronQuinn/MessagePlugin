@@ -10,7 +10,7 @@ public class Msg extends MBServerPlugin {
 	public void onEnable() {
 		context = this;
 		this.getPluginManager().registerCommand("msg", new MsgCommand());
-
+		this.getPluginManager().registerCommand("reply", new ReplyCommand());
 	}
 
 }
